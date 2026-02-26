@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">project</string>
+
+    <!-- Lab 1: Password screen -->
+    <string name="lab1_password_hint">Password</string>
+    <string name="lab1_show_characters">Show characters</string>
+    <string name="lab1_show_asterisks">Show asterisks</string>
+    <string name="lab1_ok">OK</string>
+    <string name="lab1_complete_all_data">Complete entering all data</string>
+    <string name="lab1_result">Result</string>
 </resources>
