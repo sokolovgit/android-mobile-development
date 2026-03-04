@@ -33,3 +33,6 @@ Temporary Items
 *.bak
 *.swp
 *.swo
+
+.idea
+.vscode
