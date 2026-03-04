@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">app</string>
+    <string name="lab2_password_hint">Password</string>
+    <string name="lab2_show_characters">Show characters</string>
+    <string name="lab2_show_asterisks">Show asterisks</string>
+    <string name="lab2_ok">OK</string>
+    <string name="lab2_complete_all_data">Complete entering all data</string>
+    <string name="lab2_result">Result</string>
+    <string name="lab2_cancel">Cancel</string>
 </resources>

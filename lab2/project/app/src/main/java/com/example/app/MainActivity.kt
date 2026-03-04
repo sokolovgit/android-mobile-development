@@ -7,11 +7,21 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.app.lab2.PasswordInputScreen
+import com.example.app.lab2.PasswordResultScreen
+import com.example.app.lab2.PasswordViewModel
 import com.example.app.ui.theme.AppTheme
+
+object NavRoutes {
+    const val INPUT = "input"
+    const val RESULT = "result"
+}
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,8 +30,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             AppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    PasswordNavHost(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,17 +40,34 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun PasswordNavHost(
+    modifier: Modifier = Modifier,
+    viewModel: PasswordViewModel = viewModel()
+) {
+    val navController = rememberNavController()
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AppTheme {
-        Greeting("Android")
+    NavHost(
+        navController = navController,
+        startDestination = NavRoutes.INPUT,
+        modifier = modifier
+    ) {
+        composable(NavRoutes.INPUT) {
+            PasswordInputScreen(
+                viewModel = viewModel,
+                onNavigateToResult = {
+                    navController.navigate(NavRoutes.RESULT) {
+                        popUpTo(NavRoutes.INPUT) { inclusive = false }
+                    }
+                }
+            )
+        }
+        composable(NavRoutes.RESULT) {
+            PasswordResultScreen(
+                viewModel = viewModel,
+                onCancel = {
+                    navController.popBackStack()
+                }
+            )
+        }
     }
 }
