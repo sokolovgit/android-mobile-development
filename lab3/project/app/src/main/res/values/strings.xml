@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="lab2_password_hint">Password</string>
+    <string name="lab2_show_characters">Show characters</string>
+    <string name="lab2_show_asterisks">Show asterisks</string>
+    <string name="lab2_ok">OK</string>
+    <string name="lab2_complete_all_data">Complete entering all data</string>
+    <string name="lab2_result">Result</string>
+    <string name="lab2_cancel">Cancel</string>
+    <string name="lab3_open_storage">Open</string>
+    <string name="lab3_save_success">Saved successfully</string>
+    <string name="lab3_save_failure">Could not save</string>
+    <string name="lab3_storage_title">Stored data</string>
+    <string name="lab3_storage_empty">No data stored yet.</string>
+    <string name="lab3_back">Back</string>
+    <string name="lab3_edit">Edit</string>
+    <string name="lab3_delete">Delete</string>
+    <string name="lab3_edit_title">Edit entry</string>
+    <string name="lab3_save">Save</string>
+    <string name="lab3_cancel_dialog">Cancel</string>
+    <string name="lab3_entry_meta">Visibility: %1$s · %2$s</string>
+</resources>
