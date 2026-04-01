@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">project</string>
+    <string name="app_name">Lab4 Media</string>
+    <string name="media_lab_title">Lab 4: audio and video</string>
+    <string name="media_lab_subtitle">Internal storage (bundled demos), device files (SAF), and network download. Video uses ExoPlayer + PlayerView.</string>
+    <string name="mode_label">Media type</string>
+    <string name="mode_audio">Audio</string>
+    <string name="mode_video">Video</string>
+    <string name="audio_idle_hint">Start playback to see position and a level-style visualization</string>
+    <string name="audio_time_elapsed">%1$s / %2$s</string>
+    <string name="playback_state">State: %1$s</string>
+    <string name="state_playing">playing</string>
+    <string name="state_paused">paused</string>
+    <string name="action_play">Play</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_stop">Stop</string>
+    <string name="internal_section">Internal storage (res/raw)</string>
+    <string name="action_demo_internal">Play bundled demo</string>
+    <string name="device_section">File from device</string>
+    <string name="action_pick_file">Pick file…</string>
+    <string name="network_section">Internet</string>
+    <string name="url_label">Media file URL</string>
+    <string name="url_hint">https://…</string>
+    <string name="action_download_play">Download and play</string>
+    <string name="error_empty_url">Enter a URL</string>
+    <string name="error_invalid_url">Invalid URL</string>
+    <string name="error_download_failed">Download failed</string>
 </resources>
