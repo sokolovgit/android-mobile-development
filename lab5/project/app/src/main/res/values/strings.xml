@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Будівельний рівень</string>
+    <string name="spirit_level_title">Будівельний рівень</string>
+    <string name="spirit_pitch_format">Тангаж: %1$.1f°</string>
+    <string name="spirit_roll_format">Крен: %1$.1f°</string>
+    <string name="spirit_calibrate">Відкалібрувати (поточне положення = 0°)</string>
+    <string name="spirit_level_ok">У рівень</string>
+    <string name="spirit_sensor_missing">Акселерометр або датчик гравітації недоступні.</string>
+</resources>
